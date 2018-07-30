@@ -12,7 +12,7 @@ class EmailParser
   
   def self.parse(emails)
     @emails = emails
-    @emails.split.map {|email| 
+    @emails.split.map {|email| email.split(", ")
     emails.uniq!
   end
     
