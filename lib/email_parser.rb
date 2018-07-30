@@ -13,7 +13,7 @@ class EmailParser
   def self.parse(emails)
     emails = []
     emails = self.new
-    emails.split(",")
+    emails.split(",").map
     emails.uniq!
   end
     
