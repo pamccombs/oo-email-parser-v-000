@@ -6,11 +6,11 @@ class EmailParser
   
   attr_reader :emails
   
-  def initialize
-    @emails= emails
-  end
+  #def initialize
+    #@emails= emails
+  #end
   
-  def parse
+  def self.parse
     emails.split.map do |email|
       email.split(',')
       email.split(' ')
