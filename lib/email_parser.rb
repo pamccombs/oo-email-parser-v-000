@@ -10,7 +10,7 @@ class EmailParser
     #@emails= emails
   #end
   
-  def self.parse
+  def self.parse(emails)
     emails.split.map do |email|
       email.split(',')
       email.split(' ')
