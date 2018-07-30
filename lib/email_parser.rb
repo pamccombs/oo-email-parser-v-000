@@ -6,9 +6,7 @@ class EmailParser
   
   attr_reader :emails
   
-  def initialize
-    @emails= emails
-  end
+  #
   
   def self.parse(emails)
     emails = []
