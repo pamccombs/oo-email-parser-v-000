@@ -9,7 +9,7 @@ class EmailParser
   def self.parse(email)
     email = self.new
     email.split(", ")
-    email
+    email.uniq
   end
     
     
