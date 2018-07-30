@@ -11,8 +11,8 @@ class EmailParser
   #end
   
   def self.parse(emails)
-    emails = self.new
-    emails.split(",").map
+    @emails = emails
+    @emails.
     emails.uniq!
   end
     
