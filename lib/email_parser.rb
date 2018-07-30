@@ -6,12 +6,11 @@ class EmailParser
   
   attr_reader :emails
   
-  #def initialize
-    #@emails= emails
-  #end
+  def initialize
+    @emails= emails
+  end
   
   def self.parse(emails)
-    @emails = emails
     @emails.split.map {|email| email.split(",")}.flatten.uniq
   end
     
